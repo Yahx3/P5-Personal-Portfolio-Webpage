@@ -1,0 +1,170 @@
+/* TABLE OF CONTENTS
+    General Styles
+    Nav Bar
+    Welcome Section
+    Projects Section
+    History Section
+    Footer
+    Media Query */
+
+/* ----- GENERAL STYLES ----- */
+:root {
+    --color-primary500: #FFECD1;
+    --color-primary700: #C9B99F;
+    --color-secondary700: #AC9653;
+    --color-neutral100: #FEFDFB;
+    --color-neutral700: #282724;
+    --color-neutral900: #000000;
+    --font-mono: 'Courier New', Courier, monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+    color: var(--color-primary500);
+    background: var(--color-neutral900);
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color:var(--color-primary700);
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}    
+
+h4 {
+    font-size: 2rem;
+    font-weight: 400;
+}    
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}    
+
+a {
+    color: var(--color-secondary700);
+}
+
+.serif {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.sansSerif {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+.mono {
+    font-family: var(--font-mono);
+}
+
+/* ----- NAV BAR ----- */
+nav {
+    background: var(--color-primary700);
+}    
+
+nav a {
+    color: var(--color-neutral700);
+    text-decoration: none;
+}    
+
+/* ----- WELCOME SECTION ----- */
+.welcome-description {
+    color: var(--color-primary700);
+    font-size: 2.4rem;
+}
+
+/* ----- PROJECTS SECTION ----- */
+#projects {
+    margin-top: 9.5rem;
+}
+
+.project-tile-container {
+    box-sizing: border-box;
+    margin: 2.5rem auto;
+}
+
+.project-tile-container::first {
+    margin-top: 3.5rem;
+}
+
+.project-tile {
+    display: flex;
+    width: 32rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.project-tile-screenshot {
+    width:160px;
+    order: 1;
+}
+
+.project-tile-skills {
+    line-height: 2rem;
+    order: 2;
+    margin-left: 2rem;
+}
+
+.project-tile-link {
+    order: 3;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1.9rem;
+}
+
+.project-tile-title {
+    order: 4;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 2.7rem;
+}
+
+.project-tile-description {
+    order: 5;
+    margin-top: 1rem;
+}
+
+/* ----- HISTORY ----- */
+#history {
+    margin-top: 9.5rem;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    display: grid;
+    place-items: center;
+    margin: 5rem 0.5rem;
+}
+
+footer > p {
+    color: var(--color-secondary700);
+    font-size: 1rem;
+}
+
+/* ----- MEDIA QUERY ----- */
+@media (min-width: 500px) {
+    
+}
