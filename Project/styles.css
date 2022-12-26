@@ -12,9 +12,9 @@ TABLE OF CONTENTS
     --color-neutral100: #FEFDFB;
     --color-neutral700: #282724;
     --color-neutral900: #000000;
-    --font-mono: 'Courier New', Courier, monospace;
-    --font-serif: Georgia, 'Times New Roman', Times, serif;
     --font-sansSerif: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Helvetica', 'Arial', sans-serif;
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+    --font-mono: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
 }
 
 .sansSerif {font-family: var(--font-sansSerif);}
-.serif {font-family: var(--serif)}
+.serif {font-family: var(--font-serif)}
 .mono {font-family: var(--font-mono);}
 
 h1 {
@@ -123,8 +123,8 @@ nav a {
     max-width: 1366px;
     margin-inline: auto ;
     box-sizing: border-box;
-    margin-top: calc(1rem + 1rem + 45px);
-    padding-top: 2rem;
+    /* margin-top: calc(1rem + 1rem + 45px); */
+    /* padding-top: 2rem; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -148,22 +148,31 @@ nav a {
     align-items: flex-end;
 }
 
+.welcome-headline > h1 {
+    color: var(--color-primary500);
+}
+
 .welcome-subtitle {
     width: fit-content;
 }
 
-
-/* .img-container {
-    box-sizing: border-box;
-    margin-inline: auto;
-    padding: 5rem;
-    width: 80vw;
-    max-width: 530px;
+.welcome-subtitle > .serif {
+    font-weight: 400;
 }
 
-.welcome-img-profile {
-    width: 100%;
-    max-width: 700px;
-    overflow: hidden;
-    border-radius: 50%;
-} */
+.welcome-subtitle > .sansSerif {
+    font-weight: 400;
+}
+
+.welcome-subtitle > .mono {
+    font-weight: 400;
+}
+
+.welcome-moreIcon {
+    position: absolute;
+    bottom: 10px;
+}
+
+.welcome-moreIcon:hover {
+    /* add a 'glowing' effect */
+}
