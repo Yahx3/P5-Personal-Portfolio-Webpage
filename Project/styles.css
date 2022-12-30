@@ -168,11 +168,18 @@ nav a {
     font-weight: 400;
 }
 
-.welcome-moreIcon {
+.welcome-moreArrow {
+    display: block;
     position: absolute;
     bottom: 10px;
+    width: 100%;
+    overflow: hidden;
 }
 
-.welcome-moreIcon:hover {
+.welcome-moreArrow:hover {
     /* add a 'glowing' effect */
+}
+
+.welcome-moreArrow-img {
+    margin-inline: 50%;
 }
