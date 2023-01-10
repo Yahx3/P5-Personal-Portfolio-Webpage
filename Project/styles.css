@@ -174,10 +174,19 @@ nav a {
     bottom: 10px;
     width: 100%;
     overflow: hidden;
+    animation: 2.5s ease-in-out infinite iconGlow;
 }
 
-.welcome-moreArrow:hover {
-    /* add a 'glowing' effect */
+@keyframes iconGlow {
+    30% {
+        filter: none;
+    }
+    50% {
+        filter: drop-shadow(0 0 4px currentcolor);
+    }
+    70% {
+        filter: none;
+    }
 }
 
 .welcome-moreArrow-img {
