@@ -1,7 +1,9 @@
-/* Intended for Desktop First Design */
-/* 
-TABLE OF CONTENTS
--General Styles
+/* Desktop First Design */
+/* TABLE OF CONTENTS
+    -General Styles
+    -Nav Bar
+    -Welcome Section
+    -Projects
 */
 
 /* ----- GENERAL STYLES ----- */
@@ -62,12 +64,23 @@ h4 {
 
 a {
     color: var(--color-secondary700);
+    text-decoration: none;
 }
 
 .circle {
     display: inline-block;
     box-sizing: border-box;
     border-radius: 50%;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ----- NAV BAR ----- */
@@ -121,7 +134,7 @@ nav a {
 #welcome-section {
     height: calc(100vh - 1rem + 1rem + 45px);
     max-width: 1366px;
-    margin-inline: auto ;
+    margin-inline: auto;
     box-sizing: border-box;
     /* margin-top: calc(1rem + 1rem + 45px); */
     /* padding-top: 2rem; */
@@ -192,3 +205,83 @@ nav a {
 .welcome-moreArrow-img {
     margin-inline: 50%;
 }
+
+
+
+/* ----- PROJECTS ----- */
+#projects {
+    max-width: 1366px;
+    margin-inline: auto;
+    align-content: center;
+}
+
+.projects-h1 {
+    margin: 9.5rem auto 3.5rem;
+}
+
+.project-tile-group {
+    min-width: 320px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-tile {
+    display: flex;
+    box-sizing: border-box;
+    padding: 2rem;
+    max-width: 32rem;
+}
+
+.project-tile-image {
+    width: 100%;
+    width: 16rem;
+}
+
+.project-tile-skills {
+    margin-left: 2rem;
+    font-family: var(--font-mono);
+}
+
+.project-tile-link-group {
+    margin-top: 2rem;
+}
+
+.project-tile-title {
+    margin-top: 2.7rem;
+    color: var(--color-primary700);
+}
+
+.project-tile-description {
+    margin-top: 1rem;
+}
+
+
+
+/* ----- HISTORY ----- */
+#history {
+    max-width: 1366px;
+    margin-inline: auto;
+    align-content: center;
+}
+
+.history-h1 {
+    margin: 9.5rem auto 6rem;
+}
+
+.history-tile {
+    width: 10px;
+}
+
+.history-tile-image {
+    max-width: 60rem;
+}
+
+.history-tile-context-group {
+    box-sizing: border-box;
+    margin: 8rem;
+}
+.history-tile-jobTitle
+.history-tile-company-group
+.history-tile-companyTitle
+.history-tile-companyTime
+.history-tile-description
