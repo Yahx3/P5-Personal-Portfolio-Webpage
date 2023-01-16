@@ -269,16 +269,26 @@ nav a {
 }
 
 .history-tile {
-    width: 10px;
+    align-items: stretch;
+    max-width: 1360px;
+    margin-inline: 3px;
 }
 
+.history-tile-image-container {
+    flex-grow: 600;
+    /* width: fit-content; */
+}    
+
 .history-tile-image {
-    max-width: 60rem;
+    width: 100%;
+    /* height: 100%; */
+    margin-inline: auto;
 }
 
 .history-tile-context-group {
     box-sizing: border-box;
-    margin: 8rem;
+    padding: 3rem 8rem;
+    flex-grow: 760;
 }
 .history-tile-jobTitle
 .history-tile-company-group
