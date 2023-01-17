@@ -83,6 +83,8 @@ a {
     flex-direction: column;
 }
 
+
+
 /* ----- NAV BAR ----- */
 nav {
     position: absolute;
@@ -129,6 +131,8 @@ nav a {
     gap: 3rem;
     margin-left: 2rem;
 }
+
+
 
 /* ----- WELCOME SECTION ----- */
 #welcome-section {
@@ -269,20 +273,17 @@ nav a {
 }
 
 .history-tile {
-    align-items: stretch;
     max-width: 1360px;
-    margin-inline: 3px;
+    margin: 0 0.3rem 6rem;
 }
 
 .history-tile-image-container {
     flex-grow: 600;
-    /* width: fit-content; */
 }    
 
 .history-tile-image {
-    width: 100%;
-    /* height: 100%; */
-    margin-inline: auto;
+    width: 60rem;
+    margin: auto;
 }
 
 .history-tile-context-group {
@@ -290,8 +291,15 @@ nav a {
     padding: 3rem 8rem;
     flex-grow: 760;
 }
-.history-tile-jobTitle
-.history-tile-company-group
+.history-tile-jobTitle {
+    margin-top: 2rem;
+    color: var(--color-primary700);
+}
+.history-tile-company-group {
+    justify-content: space-between;
+    margin: 1.5rem 0 5rem;
+    color: var(--color-primary700);
+}
 .history-tile-companyTitle
 .history-tile-companyTime
 .history-tile-description
