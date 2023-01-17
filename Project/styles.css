@@ -266,6 +266,7 @@ nav a {
     max-width: 1366px;
     margin-inline: auto;
     align-content: center;
+    margin-bottom: 16rem;
 }
 
 .history-h1 {
@@ -300,6 +301,11 @@ nav a {
     margin: 1.5rem 0 5rem;
     color: var(--color-primary700);
 }
-.history-tile-companyTitle
-.history-tile-companyTime
-.history-tile-description
+
+
+
+/* ----- FOOTER ----- */
+#footer {
+    margin: 5rem 2rem;
+    max-width: 1366px;
+}
