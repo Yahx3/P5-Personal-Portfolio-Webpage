@@ -22,6 +22,8 @@
 * {
     margin: 0;
     padding: 0;
+    /* DEBUG----------------------------------------------------------------------------------------------------------- */
+    /* outline: solid 1px red; */
 }
 
 html {
@@ -138,9 +140,9 @@ nav a {
 #welcome-section {
     height: calc(100vh - 1rem + 1rem + 45px);
     max-width: 1366px;
-    margin-inline: auto;
+    overflow: hidden;
     box-sizing: border-box;
-    /* margin-top: calc(1rem + 1rem + 45px); */
+    margin-inline: auto;
     /* padding-top: 2rem; */
     display: flex;
     justify-content: space-around;
@@ -276,22 +278,32 @@ nav a {
 .history-tile {
     max-width: 1360px;
     margin: 0 0.3rem 6rem;
+    align-content: center;
 }
 
 .history-tile-image-container {
-    flex-grow: 600;
-}    
+    margin: auto;
+}
 
 .history-tile-image {
     width: 60rem;
-    margin: auto;
+    height: 100%;
 }
 
 .history-tile-context-group {
     box-sizing: border-box;
     padding: 3rem 8rem;
-    flex-grow: 760;
 }
+
+@media screen and (max-width: 1100px) {
+    .history-tile-image {
+        width: 30rem;
+    }
+    .history-tile-context-group {
+        padding: 3rem 3rem;
+    }
+}
+
 .history-tile-jobTitle {
     margin-top: 2rem;
     color: var(--color-primary700);
@@ -308,4 +320,57 @@ nav a {
 #footer {
     margin: 5rem 2rem;
     max-width: 1366px;
+    color: var(--color-secondary700);
+}
+
+
+
+/* ----- MOBILE DESIGN ----- */
+@media (max-width: 650px) {
+    #welcome-section {
+        flex-wrap: wrap;
+        margin-top: calc(1rem + 1rem + 45px);
+        height: calc(100vh - 1rem - 1rem - 45px);
+    }
+    .img-container {
+        order: 1;
+    }
+    .welcome-img-profile {
+        box-sizing: border-box;
+        padding-inline: 2rem;
+    }
+    .welcome-headline {
+        order: 2;
+        padding: 0 100px 60px 0;
+    }
+    .welcome-moreArrow {
+        width: auto;
+        bottom: 20px;
+    }
+    .welcome-moreArrow-img {
+        margin-inline: 0;
+    }
+
+    .projects-h1 {
+        margin: 5rem auto 3.5rem;
+    }
+    .project-tile-group {
+        gap: 5rem;
+    }
+    
+    .history-h1 {
+        margin: 5rem auto 3.5rem;
+    }
+    .history-tile {
+        flex-wrap: wrap;
+    }
+    .history-tile-image {
+        width: 100%;
+    }
+    .history-tile-context-group {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 2rem;
+        width: 100%;
+    }
 }
