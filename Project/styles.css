@@ -22,8 +22,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* DEBUG----------------------------------------------------------------------------------------------------------- */
-    /* outline: solid 1px red; */
 }
 
 html {
@@ -88,6 +86,8 @@ a {
 
 
 /* ----- NAV BAR ----- */
+.nav-mobile {display: none;}
+
 nav {
     position: absolute;
     top: 0;
@@ -327,6 +327,59 @@ nav a {
 
 /* ----- MOBILE DESIGN ----- */
 @media (max-width: 650px) {
+    .nav-container-left a:nth-of-type(2) {
+        display: none;
+    }
+    .nav-container-right a:nth-of-type(1) {
+        display: none;
+    }
+    .nav-container-right a:nth-of-type(4) {
+        display: none;
+    }
+    .nav-container-right a:nth-of-type(5) {
+        display: none;
+    }
+    .nav-container-right {
+        justify-content: flex-end;
+    }
+    nav {
+        padding: 1rem 2rem;
+    }
+    /* Mobile Drawer */
+    /* .nav-mobile {
+        display: block;
+    }
+    .nav-mobile li {
+        list-style: none;
+    }
+    .nav-checkbox-menuIcon {
+        display: none;
+    }
+    .nav-checkbox-menuIcon:checked ~ .nav-list-mobile-container {
+        max-height: 100%;
+    }
+    .nav-label-menuIcon {
+        cursor: pointer;
+        float: right;
+    }
+    .nav-span-menuIcon {
+        font-size: 30px;
+        color: var(--color-neutral100);
+    }
+    .nav-list-mobile-container {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: var(--color-primary700);
+        overflow: hidden;
+
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+    }
+    .nav-list-mobile {
+        display: block;
+    } */
+    /* ------------------------------------------------------------ */
     #welcome-section {
         flex-wrap: wrap;
         margin-top: calc(1rem + 1rem + 45px);
@@ -350,7 +403,7 @@ nav a {
     .welcome-moreArrow-img {
         margin-inline: 0;
     }
-
+    /* ------------------------------------------------------------ */
     .projects-h1 {
         margin: 5rem auto 3.5rem;
     }
