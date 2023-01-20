@@ -88,6 +88,11 @@ a {
 /* ----- NAV BAR ----- */
 .nav-mobile {display: none;}
 
+#navbar {
+    position: fixed;
+    z-index: 10;
+}
+
 nav {
     position: absolute;
     top: 0;
